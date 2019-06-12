@@ -1,0 +1,25 @@
+author: Dan Holland
+description: Webserver with GZIP support
+arch: ESP32
+version: 1.0
+type: lib
+manifest_version: 2017-09-29
+
+tags:
+  - c
+  - http
+
+filesystem:
+  - fs
+
+sources:
+  - src
+
+includes:
+  - include
+
+libs:
+  - origin: https://github.com/mongoose-os-libs/http-server
+
+init_after:
+  - http-server
