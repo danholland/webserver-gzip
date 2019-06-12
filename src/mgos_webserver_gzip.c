@@ -25,7 +25,7 @@
 #include "mgos_config.h"
 #include "mgos_mongoose.h"
 #include "mongoose.h"
-#include "mgos_webserver.h"
+#include "mgos_webserver_gzip.h"
 #include "common/str_util.h"
 
 static struct mg_serve_http_opts s_http_server_opts;
