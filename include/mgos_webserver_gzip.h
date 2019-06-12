@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2018 Myles McNamara <https://smyl.es>
+ * Copyright (c) 2019 Dan Holland
  * All rights reserved
  *
  * Licensed under the Apache License, Version 2.0 (the ""License"");
