@@ -70,7 +70,7 @@ static void serve_handler(struct mg_connection *nc, int ev, void *p, void *user_
   mg_serve_http(nc, (struct http_message *)p, opts);
 }
 
-bool webserver_gzip_init(void)
+bool mgos_webserver_gzip_init(void)
 {
   LOG(LL_INFO, ("Webserver GZIP init"));
   memset(&s_http_server_opts, 0, sizeof(s_http_server_opts));

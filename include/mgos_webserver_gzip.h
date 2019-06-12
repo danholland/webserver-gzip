@@ -26,7 +26,7 @@ extern "C"
   /**
  * Start wifi portal
  */
-  bool webserver_gzip_init(void);
+  bool mgos_webserver_gzip_init(void);
 
 #ifdef __cplusplus
 }
