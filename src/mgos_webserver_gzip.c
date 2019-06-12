@@ -75,8 +75,8 @@ bool mgos_webserver_gzip_init(void)
   LOG(LL_INFO, ("Webserver GZIP init"));
   memset(&s_http_server_opts, 0, sizeof(s_http_server_opts));
   s_http_server_opts.document_root = "/";
-  // Add GZIP mime types for HTML, JavaScript, and CSS files
-  s_http_server_opts.custom_mime_types = ".html.gz=text/html; charset=utf-8,.js.gz=application/javascript; charset=utf-8,.css.gz=text/css; charset=utf-8";
+  // Add GZIP mime types for JavaScript and CSS files
+  s_http_server_opts.custom_mime_types = ".js.gz=application/javascript; charset=utf-8,.css.gz=text/css; charset=utf-8";
   // CORS
   s_http_server_opts.extra_headers = "Access-Control-Allow-Origin: *";
 
